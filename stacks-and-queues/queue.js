@@ -1,4 +1,4 @@
-export default class {
+module.exports = class {
   constructor(seedData) {
     this.data = [];
     if (seedData) {
@@ -7,20 +7,22 @@ export default class {
       }
     }
   }
-  
+
   enqueue(item) {
-    
+    this.data.push(item)
   }
-  
+
   dequeue() {
-    
+    this.data.shift()
   }
-  
+
   peek() {
-    
+    this.data[0]
   }
-  
+
   clear() {
-    
+    this.data = [
+      return this
+    ]
   }
 }

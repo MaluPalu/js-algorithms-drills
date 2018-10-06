@@ -7,24 +7,26 @@ module.exports = class {
       }
     }
   }
-  
+
   push(item) {
-    
+    this.data.push(item);
+    return this;
   }
-  
+
   pop() {
-    
+    return this.data.pop();
   }
-  
+
   peek() {
-    
+    return this.data(this.data.length - 1);
   }
-  
+
   clear() {
-    
+    this.data = [];
+    return this
   }
-  
+
   length() {
-    
+    this.data.length;
   }
 }
